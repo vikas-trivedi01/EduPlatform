@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowledge Up</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- navbar  -->
+
+    <nav class="navbar up-nav navbar-expand-lg mt-3" id="nav">
+      <div class="container-fluid" id="nav-div">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon bg-light text-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-center"
+                id="up-home"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <button
+                id="upload-btn"
+                class="btn up-btn text-white"
+                style="width: 200px"
+              >
+                Upload &nbsp;<i class="fa-solid fa-cloud-arrow-up"></i>
+              </button>
+            </li>
+            <li class="nav-item">
+              <a class="btn sg-btn" style="width: 200px" href="sign_up.html"
+                >Sign Out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- instructions -->
+    <div class="text-center p-3 m-5" id="instructions">
+      <p>
+        As a teacher, you can easily upload subject-related images for your
+        students through the resource page. Use the "Upload" button to add
+        images one at a time, ensuring relevant visuals are available for
+        student learning. If needed, you can manage these uploads by deleting
+        individual images or clearing all uploaded files at once, keeping the
+        resource page organized and up-to-date.
+      </p>
+    </div>
+    <hr />
+
+    <div class="upload text-center p-3 mt-5" id="up-div" style="display: none">
+      <label for="img">Upload An Image</label>
+      <hr />
+      <input type="file" accept="image/*" id="images" multiple />
+    </div>
+    <div id="storedImagesSection" class="text-center m-5">
+      <h2 class="mb-4">Uploaded Images By You As A Teacher</h2>
+      <div id="imageContainer"></div>
+    </div>
+
+    <div class="text-center" id="deleteBtn">
+      <button class="mb-4" id="delete">Delete All Uploaded Images</button>
+    </div>
+
+    <footer class="p-1 ft-bg">
+      <div class="text-center display-6">Our Socials</div>
+      <div class="row mt-3 ms-5">
+        <div class="col-sm-3">
+          <span class="badge rounded-pill p-2 bg-danger">
+            visit our youtube
+            </span>
+          <a href="#"><i class="fa-brands fa-youtube fa-2xl text-dark"></i></a>
+        </div>
+        <div class="col-sm-3">
+          <span class="badge rounded-pill p-2 bg-warning">
+            visit our instagram
+          </span>
+
+          <a href="#">
+            <i class="fa-brands fa-square-instagram fa-2xl text-dark"></i>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <span class="badge rounded-pill p-2 bg-primary">
+            visit our Facebook
+          </span>
+          <a href="#"><i class="fa-brands fa-facebook fa-2xl text-dark"></i></a>
+        </div>
+        <div class="col-sm-3">
+          <span class="badge rounded-pill p-2 bg-info">visit our LinkedIn</span>
+
+          <a href="#">
+            <i class="fa-brands fa-linkedin fa-2xl text-dark"></i>
+          </a>
+        </div>
+      </div>
+      <hr />
+      <div class="text-center display-6">Our Vision</div>
+      <div class="row mt-3 ms-5">
+        <div class="col-sm-7">
+          <p>
+            <i>
+              "The strength of our daily routine will lead us to success, both
+              in studies and in life."</i>
+          </p>
+        </div>
+        <div class="col-sm-5">
+          <p><i>"It always seems impossible until it's done."</i></p>
+        </div>
+      </div>
+      <div class="row ms-5">
+        <div class="col-sm-7">
+          <p>
+            <i>
+              "Your talents and abilities will improve over time, but for that
+              you have to start."</i>
+          </p>
+        </div>
+        <div class="col-sm-5">
+          <p><i>"There is no substitute for hard work."</i></p>
+        </div>
+      </div>
+      <hr />
+      <div class="row text-center">
+        <div class="col-sm-12">
+          <p>
+            2024 Copyright
+            <i class="me-3 fa-regular fa-copyright fa-xl"></i> All Rights
+            Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="upload.js"></script>
+    <script src="uploadedImages.js"></script>
+  </body>
+</html>
