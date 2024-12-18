@@ -90,7 +90,7 @@
         class="nav nav-tabs row row-cols-1 row-cols-lg-3 text-center tab-1 m-2 p-2"
       >
         <li class="col nav-item">
-          <a class="nav-link active" data-bs-toggle="tab" href="#web"
+          <a class="nav-link" data-bs-toggle="tab" href="#web"
             >Web Development</a
           >
         </li>
@@ -143,7 +143,7 @@
             <!-- Tab Content For Web -->
             <div class="tab-content mt-3 text-lg-start">
               <div class="tab-pane fade show active" id="webIntro">
-                <p class="text-bold">1. Introduction to Web Development</p>
+                <p class="text-bold">1. Introduction to Web Development </p>
                 <p>
                   Web development involves creating websites and web
                   applications using core technologies like HTML, CSS, and
@@ -151,11 +151,11 @@
                 </p>
               </div>
               <div class="tab-pane fade" id="webFrontEnd">
-                <p class="text-bold">2. Front-end Development</p>
+                <p class="text-bold">2. Front-end Development </p>
                 <ul>
                   <li class="text-bold">
                     HTML5 : Structure of web pages (e.g., forms, semantic tags
-                    like "article" and "section"
+                    like "article" and "section")
                   </li>
                   <li class="text-bold">
                     CSS3: Styling using properties like flexbox, grid,
@@ -189,7 +189,7 @@
 </pre>
               </div>
               <div class="tab-pane fade" id="webBackEnd">
-                <p class="text-bold">3. Back-end Development</p>
+                <p class="text-bold">3. Back-end Development </p>
                 <ul>
                   <li class="text-bold">
                     Node.js & Express.js: Build REST APIs, handle
@@ -215,11 +215,9 @@
                   </pre>
               </div>
               <div class="tab-pane fade" id="webFull">
-                <p class="text-bold">1. Introduction to Web Development</p>
+                <p class="text-bold">4. Full-stack Development </p>
                 <p>
-                  Web development involves creating websites and web
-                  applications using core technologies like HTML, CSS, and
-                  JavaScript.
+                  Combining front-end and back-end technologies using frameworks like React, Angular, and the MERN stack.
                 </p>
               </div>
             </div>
@@ -228,10 +226,81 @@
 
         <div class="tab-pane fade" id="app">
           <h4>App Development</h4>
-          <p>
-            Explore Android, iOS, and cross-platform development using Flutter
-            and React Native.
-          </p>
+
+          <div class="container mt-5">
+            <!-- Tabs Navigation For App -->
+            <ul
+              class="nav nav-tabs row row-cols-1 row-cols-lg-4 text-center tab-1 m-2 p-2"
+            >
+              <li class="col nav-item">
+                <a href="#appMobile" class="nav-link" data-bs-toggle="tab">
+                  1. Mobile App Development
+                </a>
+              </li>
+              <li class="col nav-item">
+                <a href="#appDesktop" class="nav-link" data-bs-toggle="tab">
+                  2. Desktop App Development
+                </a>
+              </li>
+              <li class="col nav-item">
+                <a href="#appDesign" class="nav-link" data-bs-toggle="tab">
+                  3. App Design Principles
+                </a>
+              </li>
+            </ul>
+
+            <!-- Tab Content For App -->
+            <div class="tab-content mt-3 text-lg-start">
+              <div class="tab-pane fade show active" id="appMobile">
+                <p class="text-bold">1. Mobile App Development </p>
+                <ul>
+                  <li class="text-bold">
+                    Native Apps: Developed using platform-specific languages (Swift for iOS, Kotlin for Android).
+                  </li>
+                  <li class="text-bold">
+                    Cross-platform: Tools like Flutter and React Native.
+                  </li>
+                  </ul>
+
+                  <pre class="app-mobile-code-block">
+                    <code>
+                      <br><span class="keyword">import</span> <span class="component">React</span> <span class="keyword">from</span><span class="string">'react'</span>;
+                      <br><span class="keyword">import</span> <span class="component">{Text,View}</span> <span class="keyword">from</span><span class="string">'react-native'</span>;
+                      <br><span class="keyword">export</span> <span class="keyword">default</span><span class="functionKey">function</span> <span class="function">App()</span> {
+                      <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>(
+                      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="component">&lt;View&gt;</span>
+                      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="component">&lt;Text&gt;</span><span class="string">Hello from React Native!</span><span class="component">&lt;/Text&gt;</span>
+                      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="component">&lt;/View&gt;</span>
+                      <br>);
+                      <br>}
+                    </code>
+                  </pre>
+
+              </div>
+              <div class="tab-pane fade" id="appDesktop">
+                <p class="text-bold">2. Desktop App Development </p>
+                <ul>
+                  <li class="text-bold">
+                    Use frameworks like Electron.js for cross-platform desktop apps.
+                  </li>
+                </ul>
+
+                <pre class="app-desktop-code-block">
+                  <code>
+                    <br><span class="keyword">const</span> <span class="component">{ app, BrowserWindow }</span> = <span class="function">require</span>(<span class="string">'electron'</span>);
+                    <br><br><span class="component">app</span>.<span class="function">on</span>(<span class="string">'ready'</span>,() => {
+                    <br>&nbsp;&nbsp;<span class="keyword">const</span> <span class="component">win</span> = <span class="keyword"> new </span> <span class="component"> BrowserWindow</span>({ <span class="coponent">width</span>:<span class="number">800</span>,<span class="coponent">height</span>:<span class="number">600</span> });
+                    <br>&nbsp;&nbsp;<span class="component">win</span>.<span class="function">loadFile</span>(<span class="string">'index.html'</span>
+                    <br>});
+                  </code>
+                </pre>
+
+              </div>
+              <div class="tab-pane fade" id="appDesign">
+                <p class="text-bold">3. App Design Principles </p>
+                <p>Focus on UI/UX using tools like Figma or Adobe XD for interactive prototypes. </p>
+            </div>
+          </div>
         </div>
 
         <div class="tab-pane fade" id="ai-ml">
