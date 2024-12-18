@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html" id="nav-home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="tutorials.html">Tutorials</a>
@@ -69,13 +69,13 @@
     </div>
 
     <!-- Tabs for Tutorials  -->
-    <div class="container mt-5 mb-5 tutorials">
+    <div class="container mt-5 mb-5 p-3 tutorials rounded border border-info">
       <!-- Tabs Navigation -->
       <ul
         class="nav nav-tabs row row-cols-1 row-cols-lg-3 text-center tab-1 m-2 p-2"
       >
         <li class="col nav-item">
-          <a class="nav-link" data-bs-toggle="tab" href="#web">Web Development</a>
+          <a class="nav-link active" data-bs-toggle="tab" href="#web">Web Development</a>
         </li>
         <li class="col nav-item">
           <a class="nav-link" data-bs-toggle="tab" href="#app">App Development</a>
@@ -86,7 +86,7 @@
       </ul>
 
       <!-- Tab Content -->
-      <div class="tab-content mt-3 text-lg-start">
+      <div class="tab-content mt-5 text-lg-start">
         <div class="tab-pane fade show active" id="web">
           <h4>Web Development</h4>
           <p>
@@ -100,7 +100,7 @@
               class="nav nav-tabs row row-cols-1 row-cols-lg-4 text-center tab-1 m-2 p-2"
             >
               <li class="col nav-item">
-                <a href="#webIntro" class="nav-link" data-bs-toggle="tab">
+                <a href="#webIntro" class="nav-link active" data-bs-toggle="tab">
                   1. Introduction to Web Development
                 </a>
               </li>
@@ -124,7 +124,8 @@
                 </a>
               </li>
             </ul>
-
+            <br>
+            <hr>
             <!-- Tab Content For Web -->
             <div class="tab-content mt-3 text-lg-start">
               <div class="tab-pane fade show active" id="webIntro">
@@ -213,13 +214,13 @@
         <div class="tab-pane fade" id="app">
           <h4>App Development</h4>
 
-          <div class="container mt-2">
+          <div class="container mt-5">
             <!-- Tabs Navigation For App -->
             <ul
               class="nav nav-tabs row row-cols-1 row-cols-lg-4 text-center tab-1 m-2 p-2"
             >
               <li class="col nav-item">
-                <a href="#appMobile" class="nav-link" data-bs-toggle="tab">
+                <a href="#appMobile" class="nav-link active" data-bs-toggle="tab">
                   1. Mobile App Development
                 </a>
               </li>
@@ -234,7 +235,8 @@
                 </a>
               </li>
             </ul>
-
+            <br>
+            <hr>
             <!-- Tab Content For App -->
             <div class="tab-content mt-3 text-lg-start">
               <div class="tab-pane fade show active" id="appMobile">
@@ -334,6 +336,8 @@
                 >
               </li>
             </ul>
+            <br>
+            <hr>
 
             <!-- Tab Content For AI & ML -->
             <div class="tab-content mt-3 text-lg-start">
