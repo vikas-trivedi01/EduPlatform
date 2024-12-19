@@ -20,8 +20,8 @@
 
     <!-- navbar  -->
 
-    <nav class="navbar up-nav navbar-expand-lg mt-3" id="nav">
-      <div class="container-fluid" id="nav-div">
+    <nav class="navbar up-nav navbar-expand-lg mt-3 mx-auto px-3 mw-sm-100" id="nav">
+      <div class="container-fluid">
         <button
           class="navbar-toggler"
           type="button"
@@ -29,32 +29,33 @@
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
+          id="nav-icon-btn"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon bg-light text-dark"></span>
+          <span class="text-light"><i class="navbar-toggler-icon bg-info text-dark"></i><br><br><p id="nav-instruction">Toggle above icon <br><br>to view navigation</p></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto text-center w-100">
+            <li class="nav-item w-100 mb-2">
               <a
-                class="nav-link"
+                class="nav-link py-2 mt-2"
                 id="up-home"
                 href="index.html"
                 >Home</a
               >
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item mb-2 me-5">
               <button
                 id="upload-btn"
-                class="btn up-btn text-white"
-                style="width: 200px"
+                class="btn up-btn text-white mt-2 w-80"
+                style="height: 86%;"
               >
                 Upload &nbsp;<i class="fa-solid fa-cloud-arrow-up"></i>
               </button>
             </li>
-            <li class="nav-item">
-              <a class="btn upload-sign-btn" style="width: 200px" href="sign_up.html"
+            <li class="nav-item w-30 me-5 mt-lg-2">
+              <a class="btn upload-sign-btn w-60 ms-1 py-2" style="width: 200px;height: 80%;" href="sign_up.html"
                 >Sign Out</a
               >
             </li>
@@ -83,7 +84,7 @@
     </div>
     <div id="storedImagesSection" class="text-center m-5">
       <h2 class="mb-4">Uploaded Images By You As A Teacher</h2>
-      <p id="scroll" class="display-5 text-info p-1">To explore additional content, simply scroll to the right. Use the horizontal scrollbar to navigate and view more items.</p>
+      <p id="scroll" class="display-5 text-light p-1">To explore additional content, simply scroll to the right. Use the horizontal scrollbar to navigate and view more items.</p>
       <div id="imageContainer"></div>
     </div>
     
@@ -111,8 +112,7 @@
         <div
           class="col mb-3 mt-3 d-flex d-lg-block justify-content-around justify-content-start"
         >
-          <span class="badge rounded-pill p-2 bg-primary">visit our Facebook</span
-          >
+          <span class="badge rounded-pill p-2 bg-primary">visit our Facebook</span>
           <a href="#"><i class="fa-brands fa-facebook fa-2xl text-dark"></i></a>
         </div>
         <div
@@ -131,8 +131,7 @@
           <p>
             <i>
               "The strength of our daily routine will lead us to success, both
-              in studies and in life."</i
-            >
+              in studies and in life."</i>
           </p>
         </div>
         <div class="col-sm-5">
@@ -144,8 +143,7 @@
           <p>
             <i>
               "Your talents and abilities will improve over time, but for that
-              you have to start."</i
-            >
+              you have to start."</i>
           </p>
         </div>
         <div class="col-sm-5">
@@ -164,6 +162,7 @@
       </div>
     </footer>
 
+    <script src="navIcon.js"></script>
     <script src="upload.js"></script>
     <script src="uploadedImages.js"></script>
   </body>

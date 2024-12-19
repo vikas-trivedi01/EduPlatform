@@ -17,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="codes.css" />
   </head>
   <body>
     <!-- navbar  -->
@@ -29,9 +30,14 @@
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
+          id="nav-icon-btn"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon bg-light text-dark"></span>
+          <span class="text-light"
+            ><i class="navbar-toggler-icon bg-info text-dark"></i><br /><br />
+            <p id="nav-instruction">
+              Toggle above icon <br /><br />to view navigation
+            </p></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -49,8 +55,7 @@
             </li>
             <li class="nav-item">
               <a class="btn sg-btn" style="width: 200px" href="sign_up.html">
-                sign out</a
-              >
+                sign out</a>
             </li>
           </ul>
         </div>
@@ -61,7 +66,7 @@
     <!-- display images uploaded by teacher  -->
     <div id="storedImagesSection" class="text-center m-5">
       <h2>Uploaded Images By Teacher</h2>
-      <p id="scroll" class="display-5 text-info p-1">
+      <p id="scroll" class="display-5 text-light p-1">
         To explore additional content, simply scroll to the right. Use the
         horizontal scrollbar to navigate and view more items.
       </p>
@@ -69,7 +74,7 @@
     </div>
 
     <!-- Tabs for Tutorials  -->
-    <div class="container mt-5 mb-5 p-3 tutorials rounded border border-info">
+    <div class="container mt-5 mb-5 p-3 tutorials rounded border border-dark">
       <!-- Tabs Navigation -->
       <ul
         class="nav nav-tabs row row-cols-1 row-cols-lg-3 text-center tab-1 m-2 p-2"
@@ -100,7 +105,11 @@
               class="nav nav-tabs row row-cols-1 row-cols-lg-4 text-center tab-1 m-2 p-2"
             >
               <li class="col nav-item">
-                <a href="#webIntro" class="nav-link active" data-bs-toggle="tab">
+                <a
+                  href="#webIntro"
+                  class="nav-link active"
+                  data-bs-toggle="tab"
+                >
                   1. Introduction to Web Development
                 </a>
               </li>
@@ -124,8 +133,8 @@
                 </a>
               </li>
             </ul>
-            <br>
-            <hr>
+            <br />
+            <hr />
             <!-- Tab Content For Web -->
             <div class="tab-content mt-3 text-lg-start">
               <div class="tab-pane fade show active" id="webIntro">
@@ -153,8 +162,8 @@
                   </li>
                 </ul>
 
-                 <!-- unindented because of pre tag causing extra unwanted spaces-->
-<pre class="front-end-code-block">
+                <!-- unindented because of pre tag causing extra unwanted spaces-->
+                <pre class="front-end-code-block">
 <code class="h5 fs-sm-1"> 
   <span class="tag">&lt;!DOCTYPE html&gt;</span>
   <span class="tag">&lt;html</span><span class="attr-name"> lang=</span><span class="attr-value">"en"</span><span class="tag">&gt;</span>
@@ -220,7 +229,11 @@
               class="nav nav-tabs row row-cols-1 row-cols-lg-4 text-center tab-1 m-2 p-2"
             >
               <li class="col nav-item">
-                <a href="#appMobile" class="nav-link active" data-bs-toggle="tab">
+                <a
+                  href="#appMobile"
+                  class="nav-link active"
+                  data-bs-toggle="tab"
+                >
                   1. Mobile App Development
                 </a>
               </li>
@@ -235,8 +248,8 @@
                 </a>
               </li>
             </ul>
-            <br>
-            <hr>
+            <br />
+            <hr />
             <!-- Tab Content For App -->
             <div class="tab-content mt-3 text-lg-start">
               <div class="tab-pane fade show active" id="appMobile">
@@ -311,33 +324,28 @@
                   href="#ai-mlIntro"
                   class="nav-link active"
                   data-bs-toggle="tab"
-                  >1. Introduction to AI & ML</a
-                >
+                  >1. Introduction to AI & ML</a>
               </li>
               <li class="nav-item col">
                 <a
                   href="#ai-mlFundamentals"
                   class="nav-link"
                   data-bs-toggle="tab"
-                  >2. ML Fundamentals</a
-                >
+                  >2. ML Fundamentals</a>
               </li>
               <li class="nav-item col">
                 <a
                   href="#ai-mlDeepConcepts"
                   class="nav-link"
                   data-bs-toggle="tab"
-                  >3. Deep Learning Concepts</a
-                >
+                  >3. Deep Learning Concepts</a>
               </li>
               <li class="nav-item col">
-                <a href="#ai-mlFrameworks" class="nav-link" data-bs-toggle="tab"
-                  >4. Frameworks & Tools</a
-                >
+                <a href="#ai-mlFrameworks" class="nav-link" data-bs-toggle="tab">4. Frameworks & Tools</a>
               </li>
             </ul>
-            <br>
-            <hr>
+            <br />
+            <hr />
 
             <!-- Tab Content For AI & ML -->
             <div class="tab-content mt-3 text-lg-start">
@@ -363,16 +371,16 @@
                     Reinforcement Learning: Trial-and-error learning.
                   </li>
                 </ul>
-                <pre class="ai-ml-code-block">
-          <code class="h5 fs-sm-1">
-            <br><span class="functionKey">from</span> <span class="component">sklearn.linear_model</span> <span class="keyword">import</span> <span class="component">LinearRegression</span>
-            <br><br><span class="variable">x</span> = <span class="array">[[1], [2], [3]]</span>
-            <br><span class="variable">y</span> = <span class="array">[2, 4, 6]</span>
-            <br><br><span class="variable">model</span> = <span class="component">LinearRegression()</span>.<span class="function">fit</span><span class="params">(x, y)</span>
-            <br><span class="keyword">print</span>(<span class="variable">model</span>.<span class="function">predict([[4]])</span>) <span class="comment"># Predicts 8</span>
-            <br>
-          </code>
-        </pre>
+                    <pre class="ai-ml-code-block">
+                      <code class="h5 fs-sm-1">
+                        <br><span class="functionKey">from</span> <span class="component">sklearn.linear_model</span> <span class="keyword">import</span> <span class="component">LinearRegression</span>
+                        <br><br><span class="variable">x</span> = <span class="array">[[1], [2], [3]]</span>
+                        <br><span class="variable">y</span> = <span class="array">[2, 4, 6]</span>
+                        <br><br><span class="variable">model</span> = <span class="component">LinearRegression()</span>.<span class="function">fit</span><span class="params">(x, y)</span>
+                        <br><span class="keyword">print</span>(<span class="variable">model</span>.<span class="function">predict([[4]])</span>) <span class="comment"># Predicts 8</span>
+                        <br>
+                      </code>
+                    </pre>
               </div>
               <div class="tab-pane fade" id="ai-mlDeepConcepts">
                 <ul>
@@ -400,27 +408,19 @@
         <div
           class="col mb-3 mt-3 d-flex d-lg-block justify-content-around justify-content-start"
         >
-          <span class="badge rounded-pill p-2 bg-danger"
-            >visit our youtube</span
-          >
+          <span class="badge rounded-pill p-2 bg-danger">visit our youtube</span>
           <a href="#"><i class="fa-brands fa-youtube fa-2xl text-dark"></i></a>
         </div>
         <div
           class="col mb-3 mt-3 d-flex d-lg-block justify-content-around justify-content-start"
         >
-          <span class="badge rounded-pill p-2 bg-warning"
-            >visit our instagram</span
-          >
-          <a href="#"
-            ><i class="fa-brands fa-square-instagram fa-2xl text-dark"></i
-          ></a>
+          <span class="badge rounded-pill p-2 bg-warning" >visit our instagram</span>
+          <a href="#" ><i class="fa-brands fa-square-instagram fa-2xl text-dark"></i></a>
         </div>
         <div
           class="col mb-3 mt-3 d-flex d-lg-block justify-content-around justify-content-start"
         >
-          <span class="badge rounded-pill p-2 bg-primary"
-            >visit our Facebook</span
-          >
+          <span class="badge rounded-pill p-2 bg-primary">visit our Facebook</span>
           <a href="#"><i class="fa-brands fa-facebook fa-2xl text-dark"></i></a>
         </div>
         <div
@@ -429,8 +429,7 @@
           <span class="badge rounded-pill p-2 bg-info">visit our LinkedIn</span>
 
           <a href="#">
-            <i class="fa-brands fa-linkedin fa-2xl text-dark"></i
-          ></a>
+            <i class="fa-brands fa-linkedin fa-2xl text-dark"></i></a>
         </div>
       </div>
       <hr />
@@ -471,7 +470,10 @@
       </div>
     </footer>
 
+    <script src="navIcon.js"></script>
+
     <!--  For Displaying Images Uploaded By Teacher -->
     <script src="uploadedImages.js"></script>
+
   </body>
 </html>
