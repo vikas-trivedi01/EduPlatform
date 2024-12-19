@@ -1,0 +1,100 @@
+/* code examples styling */
+
+.front-end-code-block,
+.back-end-code-block,
+.app-mobile-code-block,
+.app-desktop-code-block,
+.ai-ml-code-block {
+  background: #282c34;
+  color: #f8f8f2;
+  padding: 1.5em;
+  border-radius: var(--border-radius-rounded);
+  font-size: 16px;
+  line-height: 1.6;
+  width: 90%;
+  margin-left: 5%;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow-x: auto;
+}
+
+.front-end-code-block .tag,
+.back-end-code-block .variable {
+  color: #e06c75;
+}
+
+.front-end-code-block .attr-name,
+.back-end-code-block .number {
+  color: #d19a66;
+}
+
+.front-end-code-block .attr-value,
+.ai-ml-code-block .array {
+  color: #98c379;
+}
+
+.ai-ml-code-block .comment {
+  color: #78a0ea;
+  font-style: italic;
+}
+
+.front-end-code-block .string,
+.back-end-code-block .param {
+  color: #56b6c2;
+}
+
+.back-end-code-block .keyword,
+.app-mobile-code-block .keyword,
+.app-desktop-code-block .keyword,
+.ai-ml-code-block .keyword {
+  color: #c678dd;
+}
+
+.back-end-code-block .function,
+.back-end-code-block .method,
+.app-desktop-code-block .function,
+.app-desktop-code-block .method {
+  color: #61afef;
+}
+
+.back-end-code-block .variable,
+.ai-ml-code-block .variable {
+  color: #e5c07b;
+}
+
+.app-mobile-code-block .function,
+.app-mobile-code-block .method {
+  color: #e5ef61;
+}
+
+.app-mobile-code-block .functionKey,
+.ai-ml-code-block .functionKey {
+  color: #46f5c9;
+}
+
+.app-mobile-code-block .string,
+.app-desktop-code-block .string {
+  color: #f7ba93;
+}
+
+.ai-ml-code-block .params {
+  color: #f50bbf;
+}
+
+.ai-ml-code-block .function,
+.ai-ml-code-block .method {
+  color: #fdf491;
+}
+
+.app-mobile-code-block .component,
+.app-desktop-code-block .component {
+  color: #f26078;
+}
+
+.app-desktop-code-block .number {
+  color: #acf722;
+}
+
+.ai-ml-code-block .component {
+  color: #73bcf4;
+}
