@@ -33,3 +33,12 @@ This project demonstrates key intermediate JavaScript and Bootstrap concepts, in
 - Contact To Platform's Members : Fill up contact form to connect to platform's members.
 
 - Responsive Design: Platform can be easily accessible in smaller screens also.
+
+ ## Tech Stack Used
+
+<i>
+
+**Html**<br/>
+**Css**<br/>
+**Javascript**<br/>
+**Bootsrap**<br/>
